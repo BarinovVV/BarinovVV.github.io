@@ -8,6 +8,7 @@ html {
 a:active, a:visited, a:focus{
 	outline: none;
 	text-decoration: none;
+	color: #fff;
 }
 .wrapper {
 	display: table-cell;
