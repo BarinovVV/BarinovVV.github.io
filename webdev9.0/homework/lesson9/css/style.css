@@ -57,6 +57,9 @@ body {
 }
 .feature p {
 	margin-top: 20px;
+	display: block;
+	width: 120px;
+
 }
 .video {
 	margin-bottom: 30px;
@@ -64,4 +67,5 @@ body {
 .feature-box {
 	height: 160px;
 	font-weight: 900;
+	text-align: center;
 }
