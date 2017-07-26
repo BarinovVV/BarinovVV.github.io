@@ -1,0 +1,40 @@
+
+body {
+	background-color: rgba(0,0,0,.9);
+	text-shadow: 1px 1px 5px #fff;
+	
+}
+* {
+	box-sizing: border-box;
+
+}
+.box {
+	background-color: #aeaeae;
+	height: 300px;
+	width: 300px;
+	position: absolute;
+	margin: 20px;
+	z-index: 2;
+}
+.box-2 {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	position: absolute;
+	z-index: 1;
+}
+.box-3 {
+	height: 200px;
+	width: 200px;
+	background-color: green;
+	position: absolute;
+	margin: 200px;
+	z-index: 3;
+}
+.box-4 {
+	width: 170px;
+	height: 70px;
+	background-color: yellow;
+	float: left;
+	margin-right: 10px;
+}
