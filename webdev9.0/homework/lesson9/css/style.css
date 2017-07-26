@@ -17,11 +17,13 @@ body {
 	box-shadow: 5px 5px 5px #000;
 	color: rgba(0,0,0,.8);
 	text-shadow: 1px 1px 3px #000;
-	margin-bottom: 40px;
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
+}
+.main {
+	margin-top: 200px;
 }
 .section {
 	padding: 30px 0;
