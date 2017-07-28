@@ -24,14 +24,14 @@ body {
   z-index: 1;
 }
 .main {
-  margin-top: 200px;
+  margin-top: 205px;
 }
 .header {
   width: 100%;
-  background-color: #f8c14c;
 }
 .header-top {
-  background-color: #f8c14c;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8c14c), to(#f4a124));
+  background: linear-gradient(180deg, #f8c14c, #f4a124);
   border-bottom: 1px solid #ffffff;
 }
 .header-top .logo {
