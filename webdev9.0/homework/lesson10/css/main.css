@@ -1,0 +1,97 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, sans-serif;
+  color: #333;
+}
+.info-lesson {
+  font-family: 'Algerian', sans-serif;
+  font-weight: 900;
+  width: 100%;
+  background-color: #eee;
+  -webkit-box-shadow: 5px 5px 5px #000;
+          box-shadow: 5px 5px 5px #000;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 3px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.main {
+  margin-top: 200px;
+}
+.header {
+  width: 100%;
+  background-color: #f8c14c;
+}
+.header-top {
+  background-color: #f8c14c;
+  border-bottom: 1px solid #ffffff;
+}
+.header-top .logo {
+  margin: 30px auto;
+  vertical-align: middle;
+}
+.header-menu {
+  background-color: #232323;
+  margin: 30px auto;
+  text-align: center;
+}
+.header-menu a {
+  display: inline-block;
+  font-family: 'PT-sans-narrow', sans-serif;
+  width: 15%;
+  color: #f8be48;
+  font-size: 18px;
+  margin: 30px auto;
+}
+.header-bottom {
+  background-color: #fbd59c;
+  text-align: center;
+}
+.header-bottom h2 {
+  margin: 20px auto;
+  display: block;
+  font-family: 'AA Bebas neue', sans-serif;
+  font-size: 42px;
+  text-transform: uppercase;
+}
+.product {
+  background-color: #fff;
+  margin-top: 66px;
+}
+.product-card {
+  height: 74px;
+  width: 242px;
+  padding: 0;
+  margin: 0 15px 50px 15px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+}
+.product-card-img {
+  height: 100%;
+  width: 97px;
+  padding-top: 5px;
+  display: inline-block;
+}
+.product-card-name {
+  background-color: #e5e5e5;
+  vertical-align: middle;
+  height: 100%;
+  width: 145px;
+  display: inline-block;
+  margin-left: -4px;
+}
+.product-card-name p {
+  font-family: Tahoma, sans-serif;
+  padding: 25px;
+  font-size: 14px;
+  color: #232323;
+  text-decoration: underline;
+}

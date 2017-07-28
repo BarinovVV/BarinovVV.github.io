@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.info-lesson {
+  font-family: 'Algerian', sans-serif;
+  font-weight: 900;
+  width: 100%;
+  background-color: #eee;
+  box-shadow: 5px 5px 5px #000;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 3px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.main {
+  margin-top: 200px;
+}
+
+.header {
+  width: 100%;
+  background-color: #f8c14c;
+}
+
+.header-top {
+  height: 155px;
+  background-color: #f8c14c;
+  border-bottom: 1px solid #ffffff;
+}
+
+.header-top .logo {
+  margin-top: 30px;
+  vertical-align: middle;
+}
+
+.header-menu {
+  height: 82px;
+  background-color: #232323;
+  margin-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.header-menu a {
+  display: inline-block;
+  width: 15%;
+  color: #f8be48;
+  font-size: 18px;
+  margin-top: 30px;
+  vertical-align: middle;
+}
+
+.header-bottom {
+  height: 87px;
+  background-color: #fbd59c;
+  text-align: center;
+}
+
+.header-bottom h2 {
+  display: block;
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.product {
+  background-color: #fff;
+  margin-top: 66px;
+}
+
+.product-card {
+  height: 74px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.09);
+}
+
+.product-card-name {
+  background-color: #e5e5e5;
+  display: inline-block;
+  vertical-align: middle;
+  padding: ;
+  height: 74px;
+  width: 160px;
+}
+
+.product-card-name p {
+  font-family: Tahoma, sans-serif;
+  padding: 25px;
+  font-size: 14px;
+  color: #232323;
+  text-decoration: underline;
+}
