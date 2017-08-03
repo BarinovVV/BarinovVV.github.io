@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Подключение шрифтов.</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet"> 
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon2.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<div class="info-lesson container-fluid text-center">
+		<h1>Веб-разработчик 9.0</h1>
+		<h2>Урок № 14 Подключение шрифтов.</h2>
+		<h3>Домашнее задание</h3>
+		<hr>
+	</div>
+
+	  <header>
+	  	<div class="container main">
+					<div class="text-box"><input type="search" class="form-control" autofocus placeholder="Введите свою фразу"></div>
+					<div class="fonts">
+						<div class="opensans">
+							<p class="resault">Начните писать фразу</p>
+							<small>Вот так выглядит шрифт <strong>Open Sans</strong></small>
+						</div>
+						<hr>
+						<div class="bebas">
+							<p class="resault">Начните писать фразу</p>
+							<small>Вот так выглядит шрифт <strong>Bebas</strong></small>
+						</div>
+						<hr>
+						<div class="lato">
+							<p class="resault">Начните писать фразу</p>
+							<small>Вот так выглядит шрифт <strong>Lato</strong></small>
+							<hr>
+						</div>
+						<div class="lobster">
+							<p class="resault">Начните писать фразу</p>
+							<small>Вот так выглядит шрифт <strong>Lobster</strong></small>
+						</div>
+						
+					</div>
+	  	</div>
+	  </header>
+
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <!-- Include all compiled plugins (below), or include individual files as needed -->
+	  <script>
+	  		$('input').keyup(function(){
+	  			$('p.resault').text($('input').val())
+	  		});
+	  </script>
+
+
+	
+	
+	
+	
+	
+</body>
+</html>
