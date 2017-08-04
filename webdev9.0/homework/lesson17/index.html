@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Всплывающие окна</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+</head>
+<body>
+	<div class="info-lesson container-fluid text-center">
+		<h1>Веб-разработчик 9.0</h1>
+		<h2>Урок № 17 Всплывающие окна</h2>
+		<h3>Домашнее задание</h3>
+		<hr>
+	</div>
+
+	<div class="container main">
+		<div class="row">
+
+			<button class="col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 btn btn-danger btn-lg" data-toggle="modal" data-target="#my-modal">Удалить файл</button>
+
+					
+		</div>		
+	</div>
+
+	<!-- Модальное окно от бутстрап  -->
+	<div class="modal fade" id="my-modal">
+		<!-- Само модальное окно  -->
+	  <div class="modal-dialog">
+	  	<!-- Содержимое модального окна  -->
+	    <div class="modal-content">
+	    	<!-- Заголовок модального окна  -->
+	      <div class="modal-header">
+	      <!-- Кнопка закрыть  -->
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <!-- Сам заголовок окна  -->
+	        <h4 class="modal-title">Вы действительно хотите удалить файл?</h4>
+	      </div>
+	      <!-- Тело модального окна  -->
+	      <div class="modal-body ">
+	      	<div class="row">
+	        	<div class="col-xs-6 ">
+	        		<button class="btn btn-danger">ДА </button>
+	        	</div>
+	        	<div class="col-xs-6 ">
+	        		<button class="btn btn-success">НЕТ</button>
+	        	</div>
+	        
+	        </div>
+	      </div>
+	      <!-- Подвал модального окна  -->
+	      <!-- <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" class="btn btn-primary">Save changes</button>
+	      </div> -->
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+	
+	  
+	  
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/jquery.magnific-popup.min.js"></script>
+	 
+	
+</body>
+</html>
