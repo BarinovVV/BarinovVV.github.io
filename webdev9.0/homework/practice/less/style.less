@@ -72,6 +72,7 @@ body {
 @border-input: #dddddd;
 @input: #565656;
 
+
 .button {
   background-color: @bg-btn;
   color: @base;
@@ -79,11 +80,16 @@ body {
   padding: 1.4rem 2.5rem;
   border-radius: 8px;
   text-transform: uppercase;
-  background-image: -moz-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+  //background-image: -moz-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+  //background-image: -webkit-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
+  //background-image: -ms-linear-gradient( 90deg, rgb(245,173,0) 0%, rgb(255,181,4) 100%);
   box-shadow: 0px 8px 13px 0px rgba(0, 0, 0, 0.04);
   border: none;
+  transition: all .5s;
+  &:hover {
+    cursor: pointer;
+    background-color: darken(@bg-btn, 5%);
+  }
 }
 
 
@@ -104,6 +110,7 @@ section {
     margin-bottom: 6rem;
     /* Главный заголовок  */
     h1 {
+      margin-top: 0;
       font-size: 4rem;
       .bold();
       text-transform: uppercase;
@@ -216,5 +223,206 @@ header {
     display: table-cell;
     vertical-align: middle;
     text-align: right;
+  }
+}
+
+/* Стрелки для слайдера в блоке преимуществ  */ 
+.arrow {
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;  
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev {
+  background: url(../img/left.svg) center no-repeat;
+  background-size: 100%;
+  left: 0;
+  
+}
+.next {
+  background: url(../img/right.svg) center no-repeat;
+  background-size: 100%;
+  right: 0;
+}
+
+/* Блок с преимуществами  */
+.features {
+  background-color: #fff;
+  padding: 7rem 0;
+  &-header {
+    margin: 2rem 0 10rem;
+    .bold();
+    font-size: 3.6rem;
+    text-align: center;
+  }
+  &-block {
+    text-align: center;
+    h3 {
+      font-size: 2rem;
+      .bold();
+      margin-bottom: 3rem;
+    }
+    p {
+      display: inline-block;
+      width: 80%;
+      font-size: 1.4rem;  
+    }
+  }
+  &-img {
+    height: 8rem;
+    margin-bottom: 3rem;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Всплывающие окна  */
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0,0,0,.5);
+
+  &-content {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 8%;
+    background-color: @base;
+    padding: 4rem;
+    text-align: center;
+  }
+  &-form {
+    margin-top: 3rem;
+    padding: 0;
+  }
+  &-close {
+    position: absolute;
+    top: -1.5rem;
+    right: -2rem;
+    width: 2rem;
+    text-align: center;
+    border: none;
+    background-color: transparent;
+    font-size: 3rem;
+    color: @base;
+  }
+  &-header {
+    .bold();
+  }
+}
+
+/* Секция с ценами  */
+
+.price {
+  background: @icon url(../img/prices-bg.jpg) center repeat;
+  &-header {
+    text-align: center;
+    color: @base;
+    h2 {
+      .bold();
+      font-size: 3.6rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
+  }
+  &-block {
+    min-height: 50rem;
+    padding: 1rem 3rem;
+    background-color: @base;
+    box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+    text-align: center;
+    margin-top: 2rem;
+  }
+  h4 {
+    font-size: 1.9rem;
+    .bold();
+    margin: 3rem 0;
+  }
+  img {
+    max-width: 25rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
+  &-tag {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1.9rem;
+    .bold();
+  }
+  &-list {
+    list-style: none;
+    padding: 0;
+    min-height: 14rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    li {
+      &:before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        vertical-align: middle;
+        background: url(../img/tick-mark.svg) no-repeat center;
+        background-size: 60%;
+      }
+    }
+  }
+  &-btn {
+    text-align: right;
+  }
+}
+
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .phone-link {
+    text-align: center;
+  }
+  .main-content {
+    margin-top: 3rem;
+  }
+  .main-title {
+    text-align: center;
+    padding-bottom: 3rem;
+  } 
+  .price {
+    &-btn {
+      text-align: center;
+      padding: 2rem;
+    }
+  } 
+}
+@media (max-width: 767px) {
+  .header {
+    text-align: center;
+    height: 25rem;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+  html {
+    font-size: 9px;
+  }
+  .main {
+    padding: .5rem;
+  }
+  .main-content h1 {
+    font-size: 2.5rem;
   }
 }
