@@ -55,12 +55,12 @@
 				<div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-0 col-xs-10 col-xs-offset-1">
 					<div class="main-form">
 						<h2>Для расчёта точной стоимости <br> закажите <b>выезд замерщика</b></h2>
-						<form action="#">
+						<form class="form" action="#">
 							<label for="#">Ваше имя</label>
-							<input class="main-form-input" type="text">
+							<input class="form-input" type="text">
 							<label for="#">Номер телефона</label>
-							<input class="main-form-input" type="text">
-							<button class="main-form-btn button" type="submit">Оставьте заявку</button>
+							<input class="form-input" type="text">
+							<button class="form-btn button" type="submit">Оставьте заявку</button>
 							<small>Приедем в день обращения*</small>
 						</form>
 						
@@ -199,7 +199,7 @@
 				<div class="feedback-slider_item">
 					<div class="row">
 						<div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
-							<div class="fotorama" data-nav="thumbs" data-arrows="true"
+							<div class="fotorama" data-width="100%" data-nav="thumbs" data-arrows="true"
      data-click="true">
 								<img src="img/feedback/slide/1.jpg" alt="Фото слайдера 1">
 								<img src="img/feedback/slide/2.jpg" alt="Фото слайдера 2">
@@ -230,10 +230,12 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="feedback-slider_item">
 					<div class="row">
 						<div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
-							<div class="fotorama" data-nav="thumbs">
+							<div class="fotorama" data-width="100%" data-nav="thumbs" data-arrows="true"
+     data-click="true">
 								<img src="img/feedback/slide/1.jpg" alt="Фото слайдера 1">
 								<img src="img/feedback/slide/2.jpg" alt="Фото слайдера 2">
 								<img src="img/feedback/slide/3.jpg" alt="Фото слайдера 3">
@@ -263,10 +265,12 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="feedback-slider_item">
 					<div class="row">
 						<div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1 col-xs-10 col-xs-offset-1">
-							<div class="fotorama" data-nav="thumbs">
+							<div class="fotorama" data-width="100%" data-nav="thumbs" data-arrows="true"
+     data-click="true">
 								<img src="img/feedback/slide/1.jpg" alt="Фото слайдера 1">
 								<img src="img/feedback/slide/2.jpg" alt="Фото слайдера 2">
 								<img src="img/feedback/slide/3.jpg" alt="Фото слайдера 3">
@@ -298,7 +302,29 @@
 				</div>
 				
 			</div>
-		</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="feedback-form">
+						<h3>Хотите так же? Оставьте Ваши контактные данные</h3>
+						<form action="#" class="form">
+							<div class="row">
+								<div class="col-md-6">
+									<label for="#">Ваше имя</label>
+									<input class="form-input" type="text">
+								</div>
+								<div class="col-md-6">
+									<label for="#">Номер телефона</label>
+									<input class="form-input" type="text">									
+								</div>
+							</div>
+							
+							<button class="form-btn feedback-btn button" type="submit">Оставьте заявку</button>
+						</form>
+					</div> <!-- feedback-form -->
+				</div>
+			</div>
+		</div> <!-- container -->
+		<img class="hand" src="img/hand.png" alt="рука">
 
 		
 	</section>
@@ -327,14 +353,14 @@
 				</h4>
 				<p>Оставьте свои контактные данные <br> для связи</p>
 				<div class="main-form popup-form">
-					<form action="#">
+					<form class="form"	action="#">
 						<label for="#">Ваше имя</label>
-						<input class="main-form-input" type="text">
+						<input class="form-input" type="text">
 						<label for="#">Номер телефона</label>
-						<input class="main-form-input" type="text">
+						<input class="form-input" type="text">
 						<label for="#">Сообщение</label>
-						<textarea class="main-form-input" rows="5"></textarea>
-						<button class="main-form-btn button" type="submit">Оставьте заявку</button>
+						<textarea class="form-input" rows="5"></textarea>
+						<button class="form-btn button" type="submit">Оставьте заявку</button>
 					</form>
 				</div>
 			</div>
