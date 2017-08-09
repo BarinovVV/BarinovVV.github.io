@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Анимация на CSS3</title>
+	
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+
+</head>
+<body>
+	<div class="info-lesson container-fluid text-center">
+		<h1>Веб-разработчик 9.0</h1>
+		<h2 class="wow jello" data-wow-delay=".6s">Урок № 19 Анимация на CSS3</h2>
+		<h3 class="wow fadeInUp" data-wow-delay=".3s">Домашнее задание</h3>
+		<hr>
+	</div>
+
+	<div class="container main">
+
+		<div class="mytab center-block wow flipInY">
+			
+			  <!-- Nav tabs -->
+			  <div class="mytab-nav">
+			  	<ul class="nav nav-tabs" role="tablist">
+			  	  <li role="presentation" class="active wow lightSpeedIn" data-wow-delay="1s"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Sign-In</a></li>
+			  	  <li role="presentation" class="wow lightSpeedIn" data-wow-delay="1s"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sign-Up</a></li>
+			  	</ul>
+			  </div>
+		
+			  <!-- Tab panes -->
+			  <div class="tab-content center-block wow slideInUp">
+			    <div role="tabpanel" class="tab-pane active mytab-pane" id="home">
+			    	<form>
+			    	  <div class="form-group wow rotateIn" data-wow-delay="1.2s">
+			    	    <label for="userName"></label>
+			    	    <input type="text" class="form-control wow fadeOut" data-wow-delay="1.5s" id="userName" placeholder="Username">
+			    	  </div>
+			    	  <div class="form-group wow rotateIn" data-wow-delay="1.2s">
+			    	    <label for="userPassword"></label>
+			    	    <input type="password" class="form-control wow fadeOut" data-wow-delay="1.5s" id="userPassword" placeholder="Password">
+			    	  </div>
+			    	  <div class="mytab-link wow flash" data-wow-delay="1.8s" data-wow-iteration="3">
+			    		  	<a href="#">Forgot your password?</a>
+			    		</div>
+			    	  <div class="checkbox wow wobble" data-wow-delay="2s">
+			    	    <label>
+			    	      <input type="checkbox"> Remember me
+			    	    </label>
+			    	  </div>
+			    	  <button type="submit" class="btn btn-default mytab-btn wow fadeInRightBig" data-wow-delay="2.2s">Sign-In</button>
+			    	</form>
+			    </div>
+
+			    <div role="tabpanel" class="tab-pane mytab-pane" id="profile">
+			    		<form>
+			    		  <div class="form-group">
+			    		    <label for="userName"></label>
+			    		    <input type="text" class="form-control" id="userName" placeholder="Username">
+			    		  </div>
+			    		  <div class="form-group">
+			    		    <label for="userPassword"></label>
+			    		    <input type="password" class="form-control" id="userPassword" placeholder="Enter Your Password">
+			    		  </div>
+			    		  <div class="form-group">
+			    		    <label for="userPassword"></label>
+			    		    <input type="password" class="form-control" id="userPassword" placeholder="Repeat Your Password">
+			    		  </div>
+			    		  
+			    		  
+			    		  <button type="submit" class="btn btn-default mytab-btn">Sign-Up</button>
+			    		</form>
+		    	</div>
+
+
+	     </div>
+
+			  </div>
+
+		</div>
+	</div>
+
+	
+
+	
+
+
+	
+	  
+	  
+	  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="js/bootstrap.min.js"></script>
+	  <script src="js/wow.min.js"></script>
+	  <script>
+	  	var wow = new WOW;
+	  	wow.init();
+	  </script>
+	 
+	
+</body>
+</html>
