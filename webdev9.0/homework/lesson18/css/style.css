@@ -34,8 +34,7 @@ img {
   width: 100%;
 }
 .main {
-  /* background: #fff url(../img/login-bg.jpg) center no-repeat;
-	background-size: cover; */
+  margin-top: 12rem;
 }
 .mytab {
   font-family: 'Myriad Pro';
