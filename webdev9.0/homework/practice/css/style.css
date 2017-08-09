@@ -331,6 +331,72 @@ header {
 .price-btn {
   text-align: right;
 }
+/* Секция с отзывами  */
+.feedback {
+  background: #ffffff url(../img/feedback/feedback-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.feedback-header {
+  margin: 2rem 0 8rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+  text-align: center;
+}
+.feedback-prev-btn {
+  left: -4rem;
+}
+.feedback-next-btn {
+  right: -4rem;
+}
+.feedback-slider {
+  padding: 6rem;
+  background-color: #ffffff;
+  box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+.feedback-slider p {
+  font-size: 1.7rem;
+}
+.feedback-slider .media {
+  margin-top: 3rem;
+}
+.feedback-slider .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #70c849;
+  border: none;
+}
+.feedback-slider-btn img {
+  width: 100%;
+}
+.feedback-text {
+  margin-top: 2rem;
+  font-style: italic;
+  padding: 2rem 3.5rem;
+  border: 2px solid #70c849;
+  position: relative;
+}
+.feedback-text p {
+  font-size: 1.5rem;
+}
+.feedback-text::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4rem;
+  top: -2rem;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #70c849;
+  background-color: #ffffff;
+  border-bottom: none;
+  border-top-right-radius: 100px;
+}
 @media (max-width: 991px) {
   .main {
     background-position: top right;
@@ -348,6 +414,15 @@ header {
   .price-btn {
     text-align: center;
     padding: 2rem;
+  }
+  .feedback-prev-btn {
+    left: -2rem;
+  }
+  .feedback-next-btn {
+    right: -2rem;
+  }
+  .fotorama {
+    margin-bottom: 2rem;
   }
 }
 @media (max-width: 767px) {
