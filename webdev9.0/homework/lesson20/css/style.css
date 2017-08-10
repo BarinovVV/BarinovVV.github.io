@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  background-color: #aeaeae;
+  margin: 0;
+  color: #000;
+}
+.info-lesson {
+  font-family: 'Algerian', sans-serif;
+  font-weight: 900;
+  width: 100%;
+  background-color: #eee;
+  box-shadow: 5px 5px 5px #000;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 3px #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.main {
+  margin-top: 12rem;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  display: table;
+}
+.wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+}
+.wrap-block h1 {
+  font-size: 10rem;
+}
