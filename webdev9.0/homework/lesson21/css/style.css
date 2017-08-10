@@ -1,5 +1,6 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 html {
   font-size: 10px;
@@ -14,7 +15,8 @@ body {
   font-weight: 900;
   width: 100%;
   background-color: #eee;
-  box-shadow: 5px 5px 5px #000;
+  -webkit-box-shadow: 5px 5px 5px #000;
+          box-shadow: 5px 5px 5px #000;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 3px #000;
   position: fixed;
