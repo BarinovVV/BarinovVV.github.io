@@ -64,7 +64,8 @@ section {
   /* Подписи к полям  */
   /* Кнопка заявки  */
 }
-.form-input {
+.form-input,
+.form-textarea {
   display: block;
   margin: 2rem 0;
   width: 100%;
@@ -135,7 +136,7 @@ section {
 }
 .main-form {
   background-color: #ffffff;
-  padding: 4rem 5rem;
+  padding: 3rem 5rem;
   text-align: center;
   /* Заголовок формы  */
 }
@@ -606,6 +607,9 @@ header {
   background: #ffffff url(../img/tour-bg.jpg) -20rem no-repeat;
   background-size: cover;
 }
+.tour h2 {
+  font-size: 1.8rem;
+}
 /* блок дополнительных услуг */
 .upsell {
   background-color: #286b0a;
@@ -645,6 +649,42 @@ header {
   font-family: 'ProximaNova_bold', sans-serif;
   padding: 1rem 4rem;
 }
+/* блок контакты  */
+.contact {
+  background: #ffffff url(../img/contact-bg.jpg) center no-repeat;
+  background-size: cover;
+}
+.contact h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contact h3 {
+  font-size: 1.8rem;
+}
+.contact p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-link {
+  color: #1a1820;
+  display: inline-block;
+  border-bottom: 1px dotted #1a1820;
+}
+.contact-link:hover {
+  text-decoration: none;
+  color: #49445a;
+  border-bottom: 1px solid #49445a;
+}
+/* оформление подвала footer */
+footer {
+  padding: 4rem 0;
+}
+.footer-contact {
+  text-align: center;
+}
+.footer-dev {
+  text-align: right;
+}
+/* Адаптив для разных экранов */
 @media (max-width: 1199px) {
   .feedback-form {
     padding: 3rem 5rem;
@@ -694,6 +734,18 @@ header {
   }
   .problems-woman {
     display: none;
+  }
+  .contact {
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
+  .footer-contact {
+    margin-top: 3rem;
+  }
+  .footer-dev {
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
